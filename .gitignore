@@ -1,0 +1,9 @@
+﻿################################################################################
+# この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
+################################################################################
+
+/.vs
+/StudyVSInstaller/.vs/StudyVSInstaller
+/StudyVSInstaller/installer
+/StudyVSInstaller/StudyVSInstaller/bin
+/StudyVSInstaller/StudyVSInstaller/obj

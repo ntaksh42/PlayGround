@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyVSInstaller", "StudyVSInstaller\StudyVSInstaller.csproj", "{050E2353-3190-4B9D-996D-364C91E99B84}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "installer", "installer\installer.vdproj", "{AA45E2DD-F9A4-4B79-93DE-FC791CF00DC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{050E2353-3190-4B9D-996D-364C91E99B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{050E2353-3190-4B9D-996D-364C91E99B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{050E2353-3190-4B9D-996D-364C91E99B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{050E2353-3190-4B9D-996D-364C91E99B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA45E2DD-F9A4-4B79-93DE-FC791CF00DC5}.Debug|Any CPU.ActiveCfg = Debug
+		{AA45E2DD-F9A4-4B79-93DE-FC791CF00DC5}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3AAFCA6-195E-4FE7-913C-AAB5BF509A0A}
+	EndGlobalSection
+EndGlobal
