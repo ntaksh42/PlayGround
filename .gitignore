@@ -15,3 +15,8 @@
 /StudyExcelAddIn/StudyExcelAddIn/bin/Debug
 /StudyExcelAddIn/StudyExcelAddIn/obj
 /StudyVSInstaller
+/StudyOutlookAddIn/.vs/StudyOutlookAddIn/v17
+/StudyOutlookAddIn/StudyOutlookAddIn/bin/Debug
+/StudyOutlookAddIn/StudyOutlookAddIn/obj/Debug
+*.cs
+/StudyOutlookAddIn/StudyOutlookAddIn/obj/Release
