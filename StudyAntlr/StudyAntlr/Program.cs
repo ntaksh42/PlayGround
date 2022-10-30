@@ -11,7 +11,7 @@ namespace StudyAntlr
     {
         public static void Main(string[] args)
         {
-            var sourceFileFullPath = Path.Combine(CurrentDirectory, "temp.txt");
+            var sourceFileFullPath = Path.Combine(CurrentDirectory, "stSample.txt");
             var stSource = File.ReadAllText(sourceFileFullPath);
             var input = new AntlrInputStream(stSource);
             var lexer = new stParserLexer(input);
