@@ -1,0 +1,4 @@
+WS=1
+EOL=2
+COMMENT=3
+TEXT=4
