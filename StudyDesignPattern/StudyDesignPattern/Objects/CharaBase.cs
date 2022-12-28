@@ -18,5 +18,9 @@ namespace StudyDesignPattern.Objects
             Pos = point;
             Color = color;
         }
+
+        public void GoRight()
+        {
+        }
     }
 }

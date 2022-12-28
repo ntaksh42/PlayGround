@@ -33,3 +33,11 @@
 /StudySTL/StudySTL/StudySTL/x64/Debug/StudySTL.ilk
 /StudySTL/StudySTL/StudySTL/x64/Debug/StudySTL.exe.recipe
 /StudySTL/StudySTL/x64/Debug
+/StudyDesignPattern/StudyDesignPattern/obj
+/StudyDesignPattern/.vs/StudyDesignPattern/FileContentIndex
+
+*.pdb
+*.dll
+*.cache
+*.v2
+/StudyDesignPattern/Machine/obj/Debug
