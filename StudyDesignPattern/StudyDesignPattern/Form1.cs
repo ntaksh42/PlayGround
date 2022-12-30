@@ -1,3 +1,4 @@
+
 using StudyDesignPattern.Objects;
 
 namespace StudyDesignPattern

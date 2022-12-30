@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Machine.UI", "Machine.UI\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Machine", "Machine\Machine.csproj", "{2AF29CC5-7BCB-4032-928D-DF0272C4DEEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TImerSinglton", "TImerSinglton\TImerSinglton.csproj", "{65DE843B-6667-4A74-A122-FAC17A12E2FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2AF29CC5-7BCB-4032-928D-DF0272C4DEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AF29CC5-7BCB-4032-928D-DF0272C4DEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AF29CC5-7BCB-4032-928D-DF0272C4DEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65DE843B-6667-4A74-A122-FAC17A12E2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DE843B-6667-4A74-A122-FAC17A12E2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DE843B-6667-4A74-A122-FAC17A12E2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DE843B-6667-4A74-A122-FAC17A12E2FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

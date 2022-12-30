@@ -1,0 +1,14 @@
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\bin\Debug\Machine.UI.exe.config
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\bin\Debug\Machine.UI.exe
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\bin\Debug\Machine.UI.pdb
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\bin\Debug\Machine.dll
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\bin\Debug\Machine.pdb
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\obj\Debug\Machine.UI.csproj.AssemblyReference.cache
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\obj\Debug\Machine.UI.csproj.SuggestedBindingRedirects.cache
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\obj\Debug\Machine.UI.Form1.resources
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\obj\Debug\Machine.UI.Properties.Resources.resources
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\obj\Debug\Machine.UI.csproj.GenerateResource.cache
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\obj\Debug\Machine.UI.csproj.CoreCompileInputs.cache
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\obj\Debug\Machine.UI.csproj.CopyComplete
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\obj\Debug\Machine.UI.exe
+C:\Users\aksh0\source\repos\PlayGround\StudyDesignPattern\Machine.UI\obj\Debug\Machine.UI.pdb

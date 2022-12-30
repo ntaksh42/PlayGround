@@ -40,4 +40,9 @@
 *.dll
 *.cache
 *.v2
+*.exe
+*.config
+*.resources
+
+
 /StudyDesignPattern/Machine/obj/Debug
