@@ -9,7 +9,20 @@ namespace Observer
     public static class WarningTimer
     {
         private static System.Threading.Timer _timer;
-        public static event Action<bool> WarningStateChanged; 
+        //public static event Action<bool> WarningStateChanged;
+        //
+
+        private static List<IObserver> _observers = new List<IObserver>();
+        public static void AddObserver(IObserver obs)
+        {
+            _observers.Add(obs);
+        }
+
+        public static void RemoveObserver(IObserver obs)
+        {
+            _observers.Remove(obs);
+        }
+
         static WarningTimer()
         {
             _timer = new System.Threading.Timer(TimerCallback);
@@ -24,7 +37,10 @@ namespace Observer
                 if(_isWaring != value)
                 {
                     _isWaring = value;
-                    WarningStateChanged?.Invoke(_isWaring);
+                    _observers.ForEach(obs => 
+                    {
+                        obs.Update(value);
+                    });
                 }
             }
         }

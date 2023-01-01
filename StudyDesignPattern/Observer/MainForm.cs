@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Observer
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form, IObserver
     {
         public MainForm()
         {
@@ -21,18 +21,22 @@ namespace Observer
             timer1.Interval = 5000;
             timer1.Enabled = true;
 
-            WarningTimer.WarningStateChanged += WarningTimer_WarningStateChanged;
+            //WarningTimer.WarningStateChanged += WarningTimer_WarningStateChanged;
+            //this.Disposed += MainForm_Disposed;
+
+            WarningTimer.AddObserver(this);
             this.Disposed += MainForm_Disposed;
         }
 
         private void MainForm_Disposed(object sender, EventArgs e)
         {
-            WarningTimer.WarningStateChanged -= WarningTimer_WarningStateChanged;
+            WarningTimer.RemoveObserver(this);
         }
 
-        private void WarningTimer_WarningStateChanged(bool isWarning)
+
+        public  void Update(bool isWarning)
         {
-            this.Invoke((Action)delegate()
+            this.Invoke((Action)delegate ()
             {
                 if (isWarning)
                 {
@@ -46,6 +50,23 @@ namespace Observer
                 }
             });
         }
+
+        //private void WarningTimer_WarningStateChanged(bool isWarning)
+        //{
+        //    this.Invoke((Action)delegate()
+        //    {
+        //        if (isWarning)
+        //        {
+        //            WarningLabel.Text = "警報";
+        //            WarningLabel.BackColor = Color.Red;
+        //        }
+        //        else
+        //        {
+        //            WarningLabel.Text = "正常";
+        //            WarningLabel.BackColor = Color.Lime;
+        //        }
+        //    });
+        //}
 
         private void SubButton_Click(object sender, EventArgs e)
         {
