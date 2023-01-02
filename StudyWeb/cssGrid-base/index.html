@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>はじめてのCSSGrid</title>
+    <style>
+    .container{
+        display: grid;
+
+        /* fraction 割合で横幅を指定できる */
+        
+        /* gapプロパティで余白を指定できる */
+        gap: 16px;     
+        
+        /* border: 10px solid; */
+    }
+    .fill{
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .fit{
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    .item{
+        background-color: orange;
+        padding: 20px;
+    }
+    </style>    
+
+</head>
+<body>
+    <div class="container fill">
+        <div class="item">item01</div>
+        <div class="item">item02</div>
+        <div class="item">item03</div>
+        <div class="item">item04</div>
+        <div class="item">item05</div>
+        <div class="item">item06</div>
+        <div class="item">item07</div>
+        <div class="item">item08</div>
+        <div class="item">item09</div>
+        <div class="item">item010</div>
+    </div>
+
+    <div class="container fit">
+        <div class="item">item01</div>
+        <div class="item">item02</div>
+        <div class="item">item03</div>
+        <div class="item">item04</div>
+        <div class="item">item05</div>
+        <div class="item">item06</div>
+        <div class="item">item07</div>
+        <div class="item">item08</div>
+        <div class="item">item09</div>
+        <div class="item">item010</div>
+    </div>
+</body>
+</html>

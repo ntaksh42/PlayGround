@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* common */
+
+body{
+    margin: 0px;
+}
+
+img{
+    vertical-align:  bottom;
+}
+
+h1, h2, h3, p{
+    margin: 0px;
+    align-items: center;
+}
+
+.wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 30px 4%;
+}
+
+/* haedder */
+header{
+    text-align: center;
+}
+
+.photo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+/* main */
+
+.myskills{
+    background-color: ghostwhite;
+    align-items: center;
+}
+
+.myskills h2{
+    text-align: center;
+}
+
+.myskills ul{
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.html5{
+    background-color: red;
+}
+
+.css3{
+    background-color: blue;
+}
+
+.javascript{
+    background-color: yellow;
+}
+
+.myskills ul li{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+
+}
+
