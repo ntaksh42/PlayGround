@@ -35,6 +35,7 @@
 /StudySTL/StudySTL/x64/Debug
 /StudyDesignPattern/StudyDesignPattern/obj
 /StudyDesignPattern/.vs/StudyDesignPattern/FileContentIndex
+/StudyWeb/nodejs-base/web-server/node_modules
 
 *.pdb
 *.dll
