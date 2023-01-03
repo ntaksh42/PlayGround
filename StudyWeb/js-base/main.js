@@ -33,6 +33,4 @@ btn.addEventListener('click', () => {
 });
 
 
-window.
-
 // 置換を押したらItemが置き換わる。置き換え対象はドロップダウンで指定。
