@@ -26,4 +26,13 @@ selection.addEventListener('click', () => {
     }
 });
 
+
+const btn = document.getElementById("btn");
+btn.addEventListener('click', () => {
+    window.alert("ぼたんおしたよ");
+});
+
+
+window.
+
 // 置換を押したらItemが置き換わる。置き換え対象はドロップダウンで指定。
