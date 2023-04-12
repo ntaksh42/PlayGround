@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
 ################################################################################
 
@@ -48,3 +48,7 @@
 
 /StudyDesignPattern/Machine/obj/Debug
 /StudyDesignPattern/Observer/obj/Debug
+StudyAntlr/StudyAntlr/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+StudyAntlr/StudyAntlr/obj/Debug/net6.0/StudyAntlr.AssemblyInfo.cs
+StudyAntlr/StudyAntlr/obj/Debug/net6.0/StudyAntlr.GeneratedMSBuildEditorConfig.editorconfig
+StudyAntlr/StudyAntlr/obj/Debug/net6.0/StudyAntlr.GlobalUsings.g.cs
