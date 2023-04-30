@@ -27,3 +27,6 @@ HANDLE hProcess = GetCurrentProcess(); // 現在実行中のプロセスのハ�
 
         lpAddress = (LPVOID)((SIZE_T)mbi.BaseAddress + mbi.RegionSize); // 次の領域の開始アドレスに移動
     }
+
+    ・メモリ使用量 VS2022
+    https://learn.microsoft.com/ja-jp/visualstudio/profiling/memory-usage?view=vs-2022
