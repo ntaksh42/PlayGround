@@ -1,0 +1,12 @@
+| Ctrl＋N                 | 新規作成                 |
+| ----------------------- | ------------------------ |
+| Ctrl＋Enter             | 送信                     |
+| Ctrl＋R／Ctrl＋Shift＋R | 返信                     |
+| Ctrl＋F                 | 転送                     |
+| Ctrl＋Space             | 書式統一                 |
+| Ctrl＋F7                | 辞書登録                 |
+| Ctrl＋1／Ctrl＋2        | メールと予定表の切り替え |
+| Ctrl＋E                 | 検索                     |
+| Ctrl＋F3                | 高度な検索               |
+| Tab／Shift＋Tab         | 入力欄移動               |
+| Ctrl＋Shift＋E          | 新規フォルダー作成       |
