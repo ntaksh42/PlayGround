@@ -64,3 +64,12 @@ Windows + Rで起動
 | Ctrl+Shift+C | 選択フォルダまでのパスをコピー |
 |              |                                |
 
+## remote desktop
+[MSのpage](https://learn.microsoft.com/ja-jp/windows/win32/termserv/terminal-services-shortcut-keys)
+
+| Cmd           | 説明                                           |
+| ------------- | ---------------------------------------------- |
+| CTL+Alt+Pause | フルスクリーンと、ウィンドウモードを切り替える |
+| Alt+Home      | remote desktopでWindowsKeyを入力する。         |
+
+
