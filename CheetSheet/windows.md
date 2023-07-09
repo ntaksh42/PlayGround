@@ -26,7 +26,7 @@
 | Winodows+S       | 検索を開く                     |
 | Winodows+T       | タスクバーのアプリを切り替える |
 | Winodows+V       | クリップボードの履歴           |
-| Winodows+X       | クイックリンク           |
+| Winodows+X       | クイックリンク                 |
 | Winodows+Z       | スナップレイアウトペイン       |
 | Winodows+1,2,3.. | タスクバー上のアプリを起動     |
 |                  |                                |
@@ -38,6 +38,7 @@ Windows + Rで起動
 | Cmd                    | 説明                     |
 | ---------------------- | ------------------------ |
 | mspaint                | ペイントを開く           |
+| cleanmgr               | クリーンアップ           |
 | calc                   | 電卓を開く               |
 | notepad                | メモ帳                   |
 | regedit                | レジストリエディター     |
