@@ -1,6 +1,0 @@
-OPEN_PREN=1
-CLOSE_PREN=2
-ANY_SYM=3
-WS=4
-'('=1
-')'=2
