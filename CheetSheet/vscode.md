@@ -35,4 +35,10 @@
 3. `Debug and Run`を選択し、node.jsを選択する。(`.vscode`フォルダ内に設定ファイルが作成される。)
 4. F5で、デバック実行できる。
 
+## 自作のSnnipet作成
+1. [Snippet作成ツール](https://migi.me/vsc_snippet/)
+2. CTR+SFT+P→ User Snippet
+3. 言語を選択
+4. 設定ファイル(json)に貼り付け
+
 
