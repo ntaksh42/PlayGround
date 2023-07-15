@@ -1,0 +1,25 @@
+;1~10までの整数の足し算を行うラダープログラム
+;
+LD CR2002
+CAL/ EM0 #10 EM10
+LD CR2008
+MOV #0 DM0
+OUT bExecute
+MOV #0 iAns
+MOV #0 iIdx
+LD bExecute
+MC
+FOR #100
+LD CR2002
+INC iIdx
+MPS
+CAL/ iIdx #3 EM0
+MPP
+AND= EM1 #0
+CAL+ iIdx iAns iAns
+LD= iIdx #100
+BREAK
+NEXT
+MCR
+END
+ENDH
