@@ -1,0 +1,3 @@
+SurName	GivenName	Age
+akashi,naoto	28
+takahashi,taro	31
