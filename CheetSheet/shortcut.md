@@ -18,10 +18,22 @@ REG ADD HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer /v DisableSearchBoxSug
 ## printScreenキーでキャプチャとる設定
  setting > SPrintScreenキーを使用して画面領域の切り取りを起動する。 
 
+## フォルダ名を英語表示にする。
+PowerShellを管理者権限で起動して、下記のコマンドを実行する。
+
+Get-ChildItem $env:userprofile -Depth 2 -filter desktop.ini -Hidden -ErrorAction silentlycontinue | ForEach-Object {
+    $file = $_.FullName
+    echo "  File: $file"
+    $LRN = 'LocalizedResourceName'
+    $(Get-Content $file) -replace "^$LRN", ";$LRN" | Set-Content $file -force
+}
+
 ## microSoft PowerToys
 Micro Soft Stores からインストールする
 ・PowerToys RunはOff
+
 ・Win + SFT + Tで画像からテキスト抽出。
+
 ・KeyboardMangerで任意のショートカットを割り当て直しができる。
 
 ## Winキーでウィンドウをスナップした後に横に配置するものを出さない
