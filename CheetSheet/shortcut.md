@@ -13,6 +13,7 @@
 ## Win検索にWeb検索を含まない方法
 
 管理者権限でPowerShellを開いて以下のコマンドを実行する。
+
 REG ADD HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer /v DisableSearchBoxSuggestions /t REG_DWORD /d 1 /f
 
 ## printScreenキーでキャプチャとる設定
