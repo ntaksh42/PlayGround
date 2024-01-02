@@ -1,0 +1,45 @@
+﻿@page "/todo"
+@rendermode InteractiveServer
+
+<PageTitle>Todo</PageTitle>
+
+<h1>Todo (@_todoList.Count(todo => !todo.IsDone))</h1>
+
+<ul>
+    @foreach (var todo in _todoList)
+    {
+        <li>
+            <input type="checkbox" @bind="todo.IsDone" color= "red" />
+            <input @bind="todo.Title" />
+        </li>
+    }
+</ul>
+
+<input placeholder="Something todo" @bind="_newTodoTitle" />
+<button @onclick="AddTodo">Add todo</button>
+<br />
+<br />
+<button @onclick="RemoveTodo">Remove todo</button>
+
+@code {
+    private List<TodoItem> _todoList = new();
+    private string? _newTodoTitle;
+
+    private void AddTodo()
+    {
+        if (string.IsNullOrWhiteSpace(_newTodoTitle)) return;
+        _todoList.Add(new TodoItem { Title = _newTodoTitle, CreateTime = DateTime.Now });
+        _newTodoTitle = string.Empty;
+    }
+
+    private void RemoveTodo()
+    {
+        _todoList.RemoveAll(t => t.IsDone);
+    }
+
+    private string GetItemColorStr(TodoItem item)
+    {
+        if (item.CreateTime.Second - DateTime.Now.Second > 5) return "red";
+        return "black";
+    }
+}

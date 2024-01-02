@@ -1,0 +1,30 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @_currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Increment</button>
+<button class="btn btn-primary" @onclick="DecrementCount">Decrement</button>
+
+@code {
+    private int _currentCount = 0;
+
+    //NOTE: Property を外部公開して、変更を可能にできる。
+    [Parameter]
+    public int AddAmount { get; set; } = 1;
+
+    private void IncrementCount()
+    {
+        _currentCount += AddAmount;
+    }
+
+    private void DecrementCount()
+    {
+        if (_currentCount <= 0) return;
+        _currentCount--;
+    }
+}
