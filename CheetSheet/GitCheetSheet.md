@@ -38,8 +38,6 @@ https://git-scm.com/docs/git-config.html#_variables
 ## Alias設定
 ~/.gitconfig
 
-
-
 [alias]
         ci = commit
         st = status
