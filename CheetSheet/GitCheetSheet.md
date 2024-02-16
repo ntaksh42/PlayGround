@@ -11,28 +11,30 @@ https://git-scm.com/docs/git-config.html#_variables
 
 ## 基本コマンド
 
-1.ローカルリポジトリを作成して、RemoteにPushする。
+- ローカルリポジトリを作成して、RemoteにPushする。
 
-$ git init
+        $ git init
+        $ git add .
+        $ git commit -m "Initial commit"
+        $ git remote add origin https://github.com/XXXX/XXXXXX.git
+        $ git push -u origin master
 
-$ git add .
+- ローカルの変更内容をすべて元に戻す
 
-$ git commit -m "Initial commit"
+        $ git checkout .
 
-$ git remote add origin https://github.com/XXXX/XXXXXX.git
+- 特定のファイルのローカルの変更を元に戻す
 
-$ git push -u origin master
+        $ git checkout <filename>
 
-2.ローカルの変更内容をすべて元に戻す
+- ブランチの検索
 
-$ git checkout .
-
-3.特定のファイルのローカルの変更を元に戻す
-
-$ git checkout <filename>
+        $ git branch --list **
 
 ## Alias設定
 ~/.gitconfig
+
+
 
 [alias]
         ci = commit
