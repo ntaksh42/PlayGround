@@ -31,6 +31,10 @@ https://git-scm.com/docs/git-config.html#_variables
 
         $ git branch --list **
 
+- ブランチ切り替え
+
+        $ git switch **branchName**
+
 ## Alias設定
 ~/.gitconfig
 
