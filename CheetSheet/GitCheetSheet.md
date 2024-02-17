@@ -35,6 +35,25 @@ https://git-scm.com/docs/git-config.html#_variables
 
         $ git switch **branchName**
 
+- 現在のブランチ以外のすべてのローカルブランチを削除する（PowerShell)
+  # 現在のブランチを取得
+$currentBranch = & git rev-parse --abbrev-ref HEAD
+
+# ローカルブランチのリストを取得
+$localBranches = & git branch | ForEach-Object { $_.Trim() }
+
+        # 現在のブランチ以外のすべてのブランチをループ処理
+        foreach ($branch in $localBranches) {
+        if ($branch -ne $currentBranch) {
+                # ブランチの削除を確認
+                $confirmation = Read-Host "Are you sure you want to delete branch $branch? (y/n)"
+                if ($confirmation -eq 'y') {
+                # ブランチを削除
+                & git branch -d $branch
+                }
+                }
+        }
+
 ## Alias設定
 ~/.gitconfig
 
