@@ -1,5 +1,8 @@
 # Git Commnad Cheet Sheet
 
+参考
+<https://learn.microsoft.com/ja-jp/azure/devops/repos/git/command-prompt?view=azure-devops>
+
 ## Gitの設定ファイル
 - System(/etc/gitconfig)
 - Global(~/.gitconfig)
@@ -64,3 +67,5 @@ $localBranches = & git branch | ForEach-Object { $_.Trim() }
         co = checkout
         cob = checkout -b
         logg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[def]: https://learn.microsoft.com/ja-jp/azure/devops/repos/git/command-prompt?view=azure-devops
