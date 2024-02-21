@@ -12,7 +12,7 @@
 
 https://git-scm.com/docs/git-config.html#_variables
 
-## 基本コマンド
+## よく使うコマンド
 
 - ローカルリポジトリを作成して、RemoteにPushする。
 
@@ -66,6 +66,6 @@ $localBranches = & git branch | ForEach-Object { $_.Trim() }
         br = branch
         co = checkout
         cob = checkout -b
-        logg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        logtree = git log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by"%an%Creset" %x09%C(auto)%s %d'
 
 [def]: https://learn.microsoft.com/ja-jp/azure/devops/repos/git/command-prompt?view=azure-devops
