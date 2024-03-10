@@ -77,21 +77,22 @@ Path の扱い
     Write-Host $x   # D:\Powershell\data\sample1.py
     Write-Host $y   # D:\Powershell\datasample1.py
 
-
 パイプライン
 コマンドレットの処理結果や、変数の処理を次の処理に渡すための仕組み
+「｜」で次の処理にコレクションのエントリを渡すことができる。
 
+    Get-ChildItem | ForEach-Object{
+        Write-Host $_.FullName
+    }
 
-
+関数
+「function」キーワードで記述できる。他は割愛。
 
 ### コマンド
   Get-Commandで使用可能なコマンドの一覧を取得することができる。
   // mada よく使うコマンド
 
-
-
 ### Windows PowerShell ISE
 [Windows PowerShell ISE](https://learn.microsoft.com/ja-jp/powershell/scripting/windows-powershell/ise/introducing-the-windows-powershell-ise?view=powershell-7.4)
 
 候補表示なども効くし、スクリプトとして保存/デバック実行もできるので便利。
-
