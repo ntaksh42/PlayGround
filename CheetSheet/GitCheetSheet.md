@@ -42,20 +42,10 @@ https://git-scm.com/docs/git-config.html#_variables
   # 現在のブランチを取得
 $currentBranch = & git rev-parse --abbrev-ref HEAD
 
-# ローカルブランチのリストを取得
-$localBranches = & git branch | ForEach-Object { $_.Trim() }
+# 現在のローカルブランチ以外のローカルブランチを削除
 
-        # 現在のブランチ以外のすべてのブランチをループ処理
-        foreach ($branch in $localBranches) {
-        if ($branch -ne $currentBranch) {
-                # ブランチの削除を確認
-                $confirmation = Read-Host "Are you sure you want to delete branch $branch? (y/n)"
-                if ($confirmation -eq 'y') {
-                # ブランチを削除
-                & git branch -d $branch
-                }
-                }
-        }
+        git branch | ? {$_.StartsWith('*') -eq $False}| % {git branch -D $_.Trim()}
+
 
 ## Alias設定
 ~/.gitconfig
